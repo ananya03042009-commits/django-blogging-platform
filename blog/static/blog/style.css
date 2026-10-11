@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e16868;
+    color: #222;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin-left: 25px;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.post-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.post-card h2 {
+    margin-top: 0;
+}
+
+.post-card h2 a {
+    color: #222;
+    text-decoration: none;
+}
+
+.post-card h2 a:hover {
+    color: #555;
+}
+
+.meta {
+    color: #777;
+    font-size: 14px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}.post-detail {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.post-detail h1 {
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.post-detail hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+.content {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}

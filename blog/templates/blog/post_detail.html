@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }} - My Django Blog</title>
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="{% url 'home' %}" class="logo">My Django Blog</a>
+
+    <div class="nav-links">
+        <a href="{% url 'home' %}">Home</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <article class="post-detail">
+
+        <h1>{{ post.title }}</h1>
+
+        <p class="meta">
+            By {{ post.author }} |
+            {{ post.category }} |
+            {{ post.created_at|date:"F d, Y" }}
+        </p>
+
+        <hr>
+
+        <div class="content">
+            {{ post.content }}
+        </div>
+
+        <a class="read-more" href="{% url 'home' %}">
+            ← Back to Home
+        </a>
+
+    </article>
+
+</div>
+
+</body>
+</html>
